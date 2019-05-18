@@ -1,0 +1,10 @@
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\bin\Debug\Game-BauCuaTomCa.exe.config
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\bin\Debug\Game-BauCuaTomCa.exe
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\bin\Debug\Game-BauCuaTomCa.pdb
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\obj\Debug\Game-BauCuaTomCa.csprojAssemblyReference.cache
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\obj\Debug\Game_BauCuaTomCa.Form1.resources
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\obj\Debug\Game_BauCuaTomCa.Properties.Resources.resources
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\obj\Debug\Game-BauCuaTomCa.csproj.GenerateResource.cache
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\obj\Debug\Game-BauCuaTomCa.csproj.CoreCompileInputs.cache
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\obj\Debug\Game-BauCuaTomCa.exe
+F:\Game\Game-BauCuaTomCa\Game-BauCuaTomCa\obj\Debug\Game-BauCuaTomCa.pdb
