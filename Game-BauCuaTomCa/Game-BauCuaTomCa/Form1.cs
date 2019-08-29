@@ -22,6 +22,7 @@ namespace Game_BauCuaTomCa
             int SoTien = Convert.ToInt32(lblSoTien.Text);
             int DatCuoc = Convert.ToInt32(cb_DatCuoc_Ca.GetItemText(cb_DatCuoc_Ca.SelectedItem));
             lblSoTien.Text = (SoTien - DatCuoc).ToString();
+            cb_DatCuoc_Ca.Enabled = false;
         }
 
         
@@ -30,6 +31,7 @@ namespace Game_BauCuaTomCa
             int SoTien = Convert.ToInt32(lblSoTien.Text);
             int DatCuoc = Convert.ToInt32(cb_DatCuoc_Ga.GetItemText(cb_DatCuoc_Ga.SelectedItem));
             lblSoTien.Text = (SoTien - DatCuoc).ToString();
+            cb_DatCuoc_Ga.Enabled = false;
         }
 
         private void cb_DatCuoc_Cua_SelectedIndexChanged(object sender, EventArgs e)
@@ -37,6 +39,7 @@ namespace Game_BauCuaTomCa
             int SoTien = Convert.ToInt32(lblSoTien.Text);
             int DatCuoc = Convert.ToInt32(cb_DatCuoc_Cua.GetItemText(cb_DatCuoc_Cua.SelectedItem));
             lblSoTien.Text = (SoTien - DatCuoc).ToString();
+            cb_DatCuoc_Cua.Enabled = false;
         }
 
         private void cb_DatCuoc_Nai_SelectedIndexChanged(object sender, EventArgs e)
@@ -44,6 +47,7 @@ namespace Game_BauCuaTomCa
             int SoTien = Convert.ToInt32(lblSoTien.Text);
             int DatCuoc = Convert.ToInt32(cb_DatCuoc_Nai.GetItemText(cb_DatCuoc_Nai.SelectedItem));
             lblSoTien.Text = (SoTien - DatCuoc).ToString();
+            cb_DatCuoc_Nai.Enabled = false;
         }
 
         private void cb_DatCuoc_Tom_SelectedIndexChanged(object sender, EventArgs e)
@@ -51,6 +55,7 @@ namespace Game_BauCuaTomCa
             int SoTien = Convert.ToInt32(lblSoTien.Text);
             int DatCuoc = Convert.ToInt32(cb_DatCuoc_Tom.GetItemText(cb_DatCuoc_Tom.SelectedItem));
             lblSoTien.Text = (SoTien - DatCuoc).ToString();
+            cb_DatCuoc_Tom.Enabled = false;
         }
 
         private void cb_DatCuoc_Bau_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,6 +63,7 @@ namespace Game_BauCuaTomCa
             int SoTien = Convert.ToInt32(lblSoTien.Text);
             int DatCuoc = Convert.ToInt32(cb_DatCuoc_Bau.GetItemText(cb_DatCuoc_Bau.SelectedItem));
             lblSoTien.Text = (SoTien - DatCuoc).ToString();
+            cb_DatCuoc_Bau.Enabled = false;
         }
 
 
