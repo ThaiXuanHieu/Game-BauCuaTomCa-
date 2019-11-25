@@ -99,7 +99,7 @@
             this.btnChoi.Location = new System.Drawing.Point(71, 835);
             this.btnChoi.Name = "btnChoi";
             this.btnChoi.Size = new System.Drawing.Size(192, 56);
-            this.btnChoi.TabIndex = 8;
+            this.btnChoi.TabIndex = 0;
             this.btnChoi.Text = "Chơi";
             this.btnChoi.UseVisualStyleBackColor = false;
             this.btnChoi.Click += new System.EventHandler(this.btnChoi_Click);
@@ -244,7 +244,7 @@
             this.cb_DatCuoc_Bau.Location = new System.Drawing.Point(333, 405);
             this.cb_DatCuoc_Bau.Name = "cb_DatCuoc_Bau";
             this.cb_DatCuoc_Bau.Size = new System.Drawing.Size(135, 32);
-            this.cb_DatCuoc_Bau.TabIndex = 27;
+            this.cb_DatCuoc_Bau.TabIndex = 5;
             this.cb_DatCuoc_Bau.Text = "0";
             this.cb_DatCuoc_Bau.SelectedIndexChanged += new System.EventHandler(this.cb_DatCuoc_Bau_SelectedIndexChanged);
             // 
@@ -268,7 +268,7 @@
             this.cb_DatCuoc_Tom.Location = new System.Drawing.Point(174, 405);
             this.cb_DatCuoc_Tom.Name = "cb_DatCuoc_Tom";
             this.cb_DatCuoc_Tom.Size = new System.Drawing.Size(132, 32);
-            this.cb_DatCuoc_Tom.TabIndex = 26;
+            this.cb_DatCuoc_Tom.TabIndex = 4;
             this.cb_DatCuoc_Tom.Text = "0";
             this.cb_DatCuoc_Tom.SelectedIndexChanged += new System.EventHandler(this.cb_DatCuoc_Tom_SelectedIndexChanged);
             // 
@@ -292,7 +292,7 @@
             this.cb_DatCuoc_Nai.Location = new System.Drawing.Point(13, 405);
             this.cb_DatCuoc_Nai.Name = "cb_DatCuoc_Nai";
             this.cb_DatCuoc_Nai.Size = new System.Drawing.Size(135, 32);
-            this.cb_DatCuoc_Nai.TabIndex = 25;
+            this.cb_DatCuoc_Nai.TabIndex = 3;
             this.cb_DatCuoc_Nai.Text = "0";
             this.cb_DatCuoc_Nai.SelectedIndexChanged += new System.EventHandler(this.cb_DatCuoc_Nai_SelectedIndexChanged);
             // 
@@ -316,7 +316,7 @@
             this.cb_DatCuoc_Cua.Location = new System.Drawing.Point(334, 185);
             this.cb_DatCuoc_Cua.Name = "cb_DatCuoc_Cua";
             this.cb_DatCuoc_Cua.Size = new System.Drawing.Size(134, 32);
-            this.cb_DatCuoc_Cua.TabIndex = 24;
+            this.cb_DatCuoc_Cua.TabIndex = 2;
             this.cb_DatCuoc_Cua.Text = "0";
             this.cb_DatCuoc_Cua.SelectedIndexChanged += new System.EventHandler(this.cb_DatCuoc_Cua_SelectedIndexChanged);
             // 
@@ -340,7 +340,7 @@
             this.cb_DatCuoc_Ga.Location = new System.Drawing.Point(171, 185);
             this.cb_DatCuoc_Ga.Name = "cb_DatCuoc_Ga";
             this.cb_DatCuoc_Ga.Size = new System.Drawing.Size(138, 32);
-            this.cb_DatCuoc_Ga.TabIndex = 23;
+            this.cb_DatCuoc_Ga.TabIndex = 1;
             this.cb_DatCuoc_Ga.Text = "0";
             this.cb_DatCuoc_Ga.SelectedIndexChanged += new System.EventHandler(this.cb_DatCuoc_Ga_SelectedIndexChanged);
             // 
@@ -364,7 +364,7 @@
             this.cb_DatCuoc_Ca.Location = new System.Drawing.Point(12, 185);
             this.cb_DatCuoc_Ca.Name = "cb_DatCuoc_Ca";
             this.cb_DatCuoc_Ca.Size = new System.Drawing.Size(135, 32);
-            this.cb_DatCuoc_Ca.TabIndex = 22;
+            this.cb_DatCuoc_Ca.TabIndex = 0;
             this.cb_DatCuoc_Ca.Text = "0";
             this.cb_DatCuoc_Ca.SelectedIndexChanged += new System.EventHandler(this.cb_DatCuoc_Ca_SelectedIndexChanged);
             // 
@@ -433,7 +433,7 @@
             this.btnChoiTiep.Location = new System.Drawing.Point(359, 835);
             this.btnChoiTiep.Name = "btnChoiTiep";
             this.btnChoiTiep.Size = new System.Drawing.Size(192, 56);
-            this.btnChoiTiep.TabIndex = 22;
+            this.btnChoiTiep.TabIndex = 1;
             this.btnChoiTiep.Text = "Chơi tiếp";
             this.btnChoiTiep.UseVisualStyleBackColor = false;
             this.btnChoiTiep.Click += new System.EventHandler(this.btnChoiTiep_Click);
@@ -457,6 +457,8 @@
             this.Controls.Add(this.lblSoTien);
             this.Controls.Add(this.lblTien);
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game Bầu Cua Tôm Cá";

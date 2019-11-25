@@ -12,6 +12,8 @@ namespace Game_BauCuaTomCa
 {
     public partial class Form1 : Form
     {
+        bool locked = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -190,12 +192,33 @@ namespace Game_BauCuaTomCa
             cb_DatCuoc_Nai.Text = "0";
             cb_DatCuoc_Tom.Text = "0";
             cb_DatCuoc_Bau.Text = "0";
+
+            
+        }
+
+        private void KiemTraTienThuong()
+        {
+            if(Convert.ToInt32(lblSoTienThuong.Text) <= 0)
+            {
+                MessageBox.Show("BẠN KHÔNG ĐỦ TIỀN THƯỞNG ĐỂ CHƠI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnChoiTiep_Click(object sender, EventArgs e)
         {
             btnChoi.Enabled = true;
             reset();
+        }
+
+
+        private void checkLocked(bool locked)
+        {
+            cb_DatCuoc_Ca.Enabled = true;
+            cb_DatCuoc_Ga.Enabled = true;
+            cb_DatCuoc_Cua.Enabled = true;
+            cb_DatCuoc_Nai.Enabled = true;
+            cb_DatCuoc_Tom.Enabled = true;
+            cb_DatCuoc_Bau.Enabled = true;
         }
     }
 
