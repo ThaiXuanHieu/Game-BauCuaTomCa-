@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Game_BauCuaTomCa
 {
-    public partial class Form1 : Form
+    public partial class frmGame : Form
     {
         bool locked = false;
 
-        public Form1()
+        public frmGame()
         {
             InitializeComponent();
         }
@@ -72,6 +72,7 @@ namespace Game_BauCuaTomCa
         private void btnChoi_Click(object sender, EventArgs e)
         {
             btnChoi.Enabled = false;
+            btnChoiTiep.Enabled = true;
             int ketqua1, ketqua2, ketqua3;
             Random rand = new Random();
             ketqua1 = rand.Next(1, 6);
@@ -83,32 +84,26 @@ namespace Game_BauCuaTomCa
                 case 1:
                     pic_KetQua1.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_ca;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Ca.GetItemText(cb_DatCuoc_Ca.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 2:
                     pic_KetQua1.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_ga;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Ga.GetItemText(cb_DatCuoc_Ga.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 3:
                     pic_KetQua1.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_cua;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Cua.GetItemText(cb_DatCuoc_Cua.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 4:
                     pic_KetQua1.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_nai;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Nai.GetItemText(cb_DatCuoc_Nai.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 5:
                     pic_KetQua1.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_tom;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Tom.GetItemText(cb_DatCuoc_Tom.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 6:
                     pic_KetQua1.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_bau;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Bau.GetItemText(cb_DatCuoc_Bau.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
             }
 
@@ -117,32 +112,26 @@ namespace Game_BauCuaTomCa
                 case 1:
                     pic_KetQua2.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_ca;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Ca.GetItemText(cb_DatCuoc_Ca.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 2:
                     pic_KetQua2.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_ga;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Ga.GetItemText(cb_DatCuoc_Ga.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 3:
                     pic_KetQua2.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_cua;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Cua.GetItemText(cb_DatCuoc_Cua.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 4:
                     pic_KetQua2.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_nai;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Nai.GetItemText(cb_DatCuoc_Nai.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 5:
                     pic_KetQua2.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_tom;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Tom.GetItemText(cb_DatCuoc_Tom.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 6:
                     pic_KetQua2.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_bau;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Bau.GetItemText(cb_DatCuoc_Bau.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
             }
 
@@ -151,32 +140,26 @@ namespace Game_BauCuaTomCa
                 case 1:
                     pic_KetQua3.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_ca;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Ca.GetItemText(cb_DatCuoc_Ca.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 2:
                     pic_KetQua3.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_ga;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Ga.GetItemText(cb_DatCuoc_Ga.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 3:
                     pic_KetQua3.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_cua;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Cua.GetItemText(cb_DatCuoc_Cua.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 4:
                     pic_KetQua3.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_nai;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Nai.GetItemText(cb_DatCuoc_Nai.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 5:
                     pic_KetQua3.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_tom;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Tom.GetItemText(cb_DatCuoc_Tom.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
                 case 6:
                     pic_KetQua3.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_bau;
                     lblSoTienThuong.Text = (Convert.ToInt32(lblSoTienThuong.Text) + Convert.ToInt32(cb_DatCuoc_Bau.GetItemText(cb_DatCuoc_Bau.SelectedItem))).ToString();
-                    //lblSoTien.Text = (Convert.ToInt32(lblSoTien.Text) + (Convert.ToInt32(lblSoTienThuong.Text))).ToString();
                     break;
             }
 
@@ -196,18 +179,12 @@ namespace Game_BauCuaTomCa
             
         }
 
-        private void KiemTraTienThuong()
-        {
-            if(Convert.ToInt32(lblSoTienThuong.Text) <= 0)
-            {
-                MessageBox.Show("BẠN KHÔNG ĐỦ TIỀN THƯỞNG ĐỂ CHƠI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
         private void btnChoiTiep_Click(object sender, EventArgs e)
         {
+            btnChoiTiep.Enabled = false;
             btnChoi.Enabled = true;
             reset();
+            checkLocked(true);
         }
 
 
@@ -219,6 +196,18 @@ namespace Game_BauCuaTomCa
             cb_DatCuoc_Nai.Enabled = true;
             cb_DatCuoc_Tom.Enabled = true;
             cb_DatCuoc_Bau.Enabled = true;
+        }
+
+        private void frmGame_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr;
+            dr = MessageBox.Show("BẠN CHẮC CHẮN ĐÓNG ỨNG DỤNG KHÔNG?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == System.Windows.Forms.DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
         }
     }
 

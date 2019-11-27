@@ -1,6 +1,6 @@
 ﻿namespace Game_BauCuaTomCa
 {
-    partial class Form1
+    partial class frmGame
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGame));
             this.lblTien = new System.Windows.Forms.Label();
             this.lblSoTien = new System.Windows.Forms.Label();
             this.btnChoi = new System.Windows.Forms.Button();
@@ -96,7 +97,7 @@
             this.btnChoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChoi.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChoi.ForeColor = System.Drawing.Color.Black;
-            this.btnChoi.Location = new System.Drawing.Point(71, 835);
+            this.btnChoi.Location = new System.Drawing.Point(73, 750);
             this.btnChoi.Name = "btnChoi";
             this.btnChoi.Size = new System.Drawing.Size(192, 56);
             this.btnChoi.TabIndex = 0;
@@ -111,7 +112,7 @@
             this.pnlKetQua.Controls.Add(this.pic_KetQua3);
             this.pnlKetQua.Controls.Add(this.pic_KetQua2);
             this.pnlKetQua.Controls.Add(this.pic_KetQua1);
-            this.pnlKetQua.Location = new System.Drawing.Point(71, 600);
+            this.pnlKetQua.Location = new System.Drawing.Point(73, 527);
             this.pnlKetQua.Name = "pnlKetQua";
             this.pnlKetQua.Size = new System.Drawing.Size(480, 160);
             this.pnlKetQua.TabIndex = 9;
@@ -159,15 +160,15 @@
             this.pnlWrapper.Controls.Add(this.cb_DatCuoc_Cua);
             this.pnlWrapper.Controls.Add(this.cb_DatCuoc_Ga);
             this.pnlWrapper.Controls.Add(this.cb_DatCuoc_Ca);
-            this.pnlWrapper.Location = new System.Drawing.Point(71, 73);
+            this.pnlWrapper.Location = new System.Drawing.Point(73, 65);
             this.pnlWrapper.Name = "pnlWrapper";
-            this.pnlWrapper.Size = new System.Drawing.Size(480, 460);
+            this.pnlWrapper.Size = new System.Drawing.Size(480, 402);
             this.pnlWrapper.TabIndex = 16;
             // 
             // picBau
             // 
             this.picBau.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_bau;
-            this.picBau.Location = new System.Drawing.Point(333, 244);
+            this.picBau.Location = new System.Drawing.Point(334, 209);
             this.picBau.Name = "picBau";
             this.picBau.Size = new System.Drawing.Size(135, 135);
             this.picBau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,7 +178,7 @@
             // pic_Tom
             // 
             this.pic_Tom.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_tom;
-            this.pic_Tom.Location = new System.Drawing.Point(171, 244);
+            this.pic_Tom.Location = new System.Drawing.Point(172, 209);
             this.pic_Tom.Name = "pic_Tom";
             this.pic_Tom.Size = new System.Drawing.Size(135, 135);
             this.pic_Tom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,7 +188,7 @@
             // pic_Nai
             // 
             this.pic_Nai.Image = global::Game_BauCuaTomCa.Properties.Resources.icon_nai;
-            this.pic_Nai.Location = new System.Drawing.Point(13, 244);
+            this.pic_Nai.Location = new System.Drawing.Point(13, 209);
             this.pic_Nai.Name = "pic_Nai";
             this.pic_Nai.Size = new System.Drawing.Size(135, 135);
             this.pic_Nai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -241,7 +242,7 @@
             "40000",
             "45000",
             "50000"});
-            this.cb_DatCuoc_Bau.Location = new System.Drawing.Point(333, 405);
+            this.cb_DatCuoc_Bau.Location = new System.Drawing.Point(334, 350);
             this.cb_DatCuoc_Bau.Name = "cb_DatCuoc_Bau";
             this.cb_DatCuoc_Bau.Size = new System.Drawing.Size(135, 32);
             this.cb_DatCuoc_Bau.TabIndex = 5;
@@ -265,7 +266,7 @@
             "40000",
             "45000",
             "50000"});
-            this.cb_DatCuoc_Tom.Location = new System.Drawing.Point(174, 405);
+            this.cb_DatCuoc_Tom.Location = new System.Drawing.Point(174, 350);
             this.cb_DatCuoc_Tom.Name = "cb_DatCuoc_Tom";
             this.cb_DatCuoc_Tom.Size = new System.Drawing.Size(132, 32);
             this.cb_DatCuoc_Tom.TabIndex = 4;
@@ -289,7 +290,7 @@
             "40000",
             "45000",
             "50000"});
-            this.cb_DatCuoc_Nai.Location = new System.Drawing.Point(13, 405);
+            this.cb_DatCuoc_Nai.Location = new System.Drawing.Point(13, 350);
             this.cb_DatCuoc_Nai.Name = "cb_DatCuoc_Nai";
             this.cb_DatCuoc_Nai.Size = new System.Drawing.Size(135, 32);
             this.cb_DatCuoc_Nai.TabIndex = 3;
@@ -313,7 +314,7 @@
             "40000",
             "45000",
             "50000"});
-            this.cb_DatCuoc_Cua.Location = new System.Drawing.Point(334, 185);
+            this.cb_DatCuoc_Cua.Location = new System.Drawing.Point(334, 161);
             this.cb_DatCuoc_Cua.Name = "cb_DatCuoc_Cua";
             this.cb_DatCuoc_Cua.Size = new System.Drawing.Size(134, 32);
             this.cb_DatCuoc_Cua.TabIndex = 2;
@@ -337,7 +338,7 @@
             "40000",
             "45000",
             "50000"});
-            this.cb_DatCuoc_Ga.Location = new System.Drawing.Point(171, 185);
+            this.cb_DatCuoc_Ga.Location = new System.Drawing.Point(174, 161);
             this.cb_DatCuoc_Ga.Name = "cb_DatCuoc_Ga";
             this.cb_DatCuoc_Ga.Size = new System.Drawing.Size(138, 32);
             this.cb_DatCuoc_Ga.TabIndex = 1;
@@ -361,7 +362,7 @@
             "40000",
             "45000",
             "50000"});
-            this.cb_DatCuoc_Ca.Location = new System.Drawing.Point(12, 185);
+            this.cb_DatCuoc_Ca.Location = new System.Drawing.Point(12, 161);
             this.cb_DatCuoc_Ca.Name = "cb_DatCuoc_Ca";
             this.cb_DatCuoc_Ca.Size = new System.Drawing.Size(135, 32);
             this.cb_DatCuoc_Ca.TabIndex = 0;
@@ -373,7 +374,7 @@
             this.lblKetQua.AutoSize = true;
             this.lblKetQua.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKetQua.ForeColor = System.Drawing.Color.White;
-            this.lblKetQua.Location = new System.Drawing.Point(245, 546);
+            this.lblKetQua.Location = new System.Drawing.Point(244, 475);
             this.lblKetQua.Name = "lblKetQua";
             this.lblKetQua.Size = new System.Drawing.Size(136, 39);
             this.lblKetQua.TabIndex = 17;
@@ -395,7 +396,7 @@
             this.lblTienThuong.AutoSize = true;
             this.lblTienThuong.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTienThuong.ForeColor = System.Drawing.Color.White;
-            this.lblTienThuong.Location = new System.Drawing.Point(171, 772);
+            this.lblTienThuong.Location = new System.Drawing.Point(171, 690);
             this.lblTienThuong.Name = "lblTienThuong";
             this.lblTienThuong.Size = new System.Drawing.Size(117, 46);
             this.lblTienThuong.TabIndex = 19;
@@ -406,7 +407,7 @@
             this.lblSoTienThuong.AutoSize = true;
             this.lblSoTienThuong.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoTienThuong.ForeColor = System.Drawing.Color.White;
-            this.lblSoTienThuong.Location = new System.Drawing.Point(294, 772);
+            this.lblSoTienThuong.Location = new System.Drawing.Point(294, 690);
             this.lblSoTienThuong.Name = "lblSoTienThuong";
             this.lblSoTienThuong.Size = new System.Drawing.Size(40, 46);
             this.lblSoTienThuong.TabIndex = 20;
@@ -417,7 +418,7 @@
             this.lblDonVi2.AutoSize = true;
             this.lblDonVi2.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDonVi2.ForeColor = System.Drawing.Color.White;
-            this.lblDonVi2.Location = new System.Drawing.Point(435, 772);
+            this.lblDonVi2.Location = new System.Drawing.Point(435, 690);
             this.lblDonVi2.Name = "lblDonVi2";
             this.lblDonVi2.Size = new System.Drawing.Size(40, 46);
             this.lblDonVi2.TabIndex = 21;
@@ -430,7 +431,7 @@
             this.btnChoiTiep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChoiTiep.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChoiTiep.ForeColor = System.Drawing.Color.Black;
-            this.btnChoiTiep.Location = new System.Drawing.Point(359, 835);
+            this.btnChoiTiep.Location = new System.Drawing.Point(361, 750);
             this.btnChoiTiep.Name = "btnChoiTiep";
             this.btnChoiTiep.Size = new System.Drawing.Size(192, 56);
             this.btnChoiTiep.TabIndex = 1;
@@ -438,13 +439,13 @@
             this.btnChoiTiep.UseVisualStyleBackColor = false;
             this.btnChoiTiep.Click += new System.EventHandler(this.btnChoiTiep_Click);
             // 
-            // Form1
+            // frmGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(72)))), ((int)(((byte)(53)))));
-            this.ClientSize = new System.Drawing.Size(622, 918);
+            this.ClientSize = new System.Drawing.Size(622, 814);
             this.Controls.Add(this.btnChoiTiep);
             this.Controls.Add(this.lblDonVi2);
             this.Controls.Add(this.lblSoTienThuong);
@@ -458,10 +459,12 @@
             this.Controls.Add(this.lblTien);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "frmGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game Bầu Cua Tôm Cá";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGame_FormClosing);
             this.pnlKetQua.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_KetQua3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_KetQua2)).EndInit();
